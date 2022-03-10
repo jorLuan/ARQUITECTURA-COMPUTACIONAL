@@ -1,0 +1,15 @@
+E:\Arquitectura\Arquitectura Poyectp.X\LCD.h:21:10:  Error#18  File can not be opened
+    Not in ";E:\Arquitectura\Arquitectura Poyectp.X\pic18f4550.h"
+    Not in local "pic18f4550.h"
+    Not in local "E:\Arquitectura\Arquitectura Poyectp.X\pic18f4550.h"
+    Not in last "E:\Arquitectura\Arquitectura Poyectp.X\pic18f4550.h"
+    Not in project "E:\Arquitectura\Arquitectura Poyectp.X\pic18f4550.h"
+E:\Arquitectura\Arquitectura Poyectp.X\LCD.h:22:10:  Error#18  File can not be opened
+    Not in local "Config.h"
+    Not in local "E:\Arquitectura\Arquitectura Poyectp.X\Config.h"
+    Not in last "E:\Arquitectura\Arquitectura Poyectp.X\Config.h"
+    Not in project "E:\Arquitectura\Arquitectura Poyectp.X\Config.h"
+    Not in "E:\Arquitectura\Arquitectura Poyectp.X\Config.h"
+E:\Arquitectura\Arquitectura Poyectp.X\LCD.h:26:9:  Error#128  A #DEVICE required before this line
+      3 Errors,  0 Warnings.
+Build Failed.
