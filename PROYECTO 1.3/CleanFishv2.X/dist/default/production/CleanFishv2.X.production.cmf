@@ -1,0 +1,496 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\PC\AppData\Local\Temp\xcAsbnc.o
+idloc IDLOC 5 200000 200000 8 1 1
+init CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
+$dist/default/production\CleanFishv2.X.production.o
+cinit CODE 0 B6E B6E 3A 1 2
+idloc IDLOC 5 200000 200000 8 1 1
+text0 CODE 0 AE6 AE6 48 1 2
+text1 CODE 0 820 820 226 1 2
+text2 CODE 0 B2E B2E 40 1 2
+text3 CODE 0 BA8 BA8 36 1 2
+text4 CODE 0 A46 A46 50 1 2
+text5 CODE 0 BDE BDE 34 1 2
+text6 CODE 0 A96 A96 50 1 2
+idataCOMRAM CODE 0 C12 C12 15 1 1
+cstackCOMRAM COMRAM 1 16 16 A 1 1
+smallconst SMALLCONST 0 800 800 20 1 2
+dataCOMRAM COMRAM 1 1 1 15 1 1
+bssCOMRAM COMRAM 1 20 20 9 1 1
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-7FF 1
+SFR F60-FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 4-7FF 1
+CONST C27-7FFF 1
+SMALLCONST C27-7FFF 1
+CODE 4-7FF 1
+CODE C27-7FFF 1
+BIGRAM 29-7FF 1
+BIGSFR F60-FFF 1
+COMRAM 29-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST C27-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\CleanFishv2.X.production.o
+A96 text6 CODE >18:E:\Arquitectura\CleanFishv2.X\LCD.c
+A98 text6 CODE >20:E:\Arquitectura\CleanFishv2.X\LCD.c
+AA8 text6 CODE >21:E:\Arquitectura\CleanFishv2.X\LCD.c
+AAA text6 CODE >22:E:\Arquitectura\CleanFishv2.X\LCD.c
+AAC text6 CODE >23:E:\Arquitectura\CleanFishv2.X\LCD.c
+AAE text6 CODE >24:E:\Arquitectura\CleanFishv2.X\LCD.c
+AB0 text6 CODE >25:E:\Arquitectura\CleanFishv2.X\LCD.c
+ABE text6 CODE >26:E:\Arquitectura\CleanFishv2.X\LCD.c
+AD0 text6 CODE >27:E:\Arquitectura\CleanFishv2.X\LCD.c
+AD2 text6 CODE >28:E:\Arquitectura\CleanFishv2.X\LCD.c
+AD4 text6 CODE >29:E:\Arquitectura\CleanFishv2.X\LCD.c
+AD6 text6 CODE >30:E:\Arquitectura\CleanFishv2.X\LCD.c
+AE4 text6 CODE >31:E:\Arquitectura\CleanFishv2.X\LCD.c
+BDE text5 CODE >5:E:\Arquitectura\CleanFishv2.X\LCD.c
+BDE text5 CODE >7:E:\Arquitectura\CleanFishv2.X\LCD.c
+BE2 text5 CODE >8:E:\Arquitectura\CleanFishv2.X\LCD.c
+BF2 text5 CODE >9:E:\Arquitectura\CleanFishv2.X\LCD.c
+BF8 text5 CODE >11:E:\Arquitectura\CleanFishv2.X\LCD.c
+BFE text5 CODE >13:E:\Arquitectura\CleanFishv2.X\LCD.c
+C04 text5 CODE >14:E:\Arquitectura\CleanFishv2.X\LCD.c
+C0A text5 CODE >15:E:\Arquitectura\CleanFishv2.X\LCD.c
+C10 text5 CODE >16:E:\Arquitectura\CleanFishv2.X\LCD.c
+A46 text4 CODE >36:E:\Arquitectura\CleanFishv2.X\LCD.c
+A48 text4 CODE >38:E:\Arquitectura\CleanFishv2.X\LCD.c
+A58 text4 CODE >39:E:\Arquitectura\CleanFishv2.X\LCD.c
+A5A text4 CODE >40:E:\Arquitectura\CleanFishv2.X\LCD.c
+A5C text4 CODE >41:E:\Arquitectura\CleanFishv2.X\LCD.c
+A5E text4 CODE >42:E:\Arquitectura\CleanFishv2.X\LCD.c
+A60 text4 CODE >43:E:\Arquitectura\CleanFishv2.X\LCD.c
+A6E text4 CODE >44:E:\Arquitectura\CleanFishv2.X\LCD.c
+A80 text4 CODE >45:E:\Arquitectura\CleanFishv2.X\LCD.c
+A82 text4 CODE >46:E:\Arquitectura\CleanFishv2.X\LCD.c
+A84 text4 CODE >47:E:\Arquitectura\CleanFishv2.X\LCD.c
+A86 text4 CODE >48:E:\Arquitectura\CleanFishv2.X\LCD.c
+A94 text4 CODE >49:E:\Arquitectura\CleanFishv2.X\LCD.c
+BA8 text3 CODE >50:E:\Arquitectura\CleanFishv2.X\LCD.c
+BA8 text3 CODE >52:E:\Arquitectura\CleanFishv2.X\LCD.c
+BAC text3 CODE >54:E:\Arquitectura\CleanFishv2.X\LCD.c
+BBC text3 CODE >55:E:\Arquitectura\CleanFishv2.X\LCD.c
+BC0 text3 CODE >52:E:\Arquitectura\CleanFishv2.X\LCD.c
+BDC text3 CODE >58:E:\Arquitectura\CleanFishv2.X\LCD.c
+B2E text2 CODE >60:E:\Arquitectura\CleanFishv2.X\LCD.c
+B30 text2 CODE >62:E:\Arquitectura\CleanFishv2.X\LCD.c
+B30 text2 CODE >63:E:\Arquitectura\CleanFishv2.X\LCD.c
+B40 text2 CODE >65:E:\Arquitectura\CleanFishv2.X\LCD.c
+B48 text2 CODE >66:E:\Arquitectura\CleanFishv2.X\LCD.c
+B4E text2 CODE >67:E:\Arquitectura\CleanFishv2.X\LCD.c
+B52 text2 CODE >70:E:\Arquitectura\CleanFishv2.X\LCD.c
+B5A text2 CODE >71:E:\Arquitectura\CleanFishv2.X\LCD.c
+B60 text2 CODE >75:E:\Arquitectura\CleanFishv2.X\LCD.c
+B6C text2 CODE >77:E:\Arquitectura\CleanFishv2.X\LCD.c
+820 text1 CODE >92:E:\Arquitectura\CleanFishv2.X\main.c
+820 text1 CODE >95:E:\Arquitectura\CleanFishv2.X\main.c
+824 text1 CODE >98:E:\Arquitectura\CleanFishv2.X\main.c
+828 text1 CODE >104:E:\Arquitectura\CleanFishv2.X\main.c
+82E text1 CODE >106:E:\Arquitectura\CleanFishv2.X\main.c
+840 text1 CODE >107:E:\Arquitectura\CleanFishv2.X\main.c
+846 text1 CODE >108:E:\Arquitectura\CleanFishv2.X\main.c
+858 text1 CODE >110:E:\Arquitectura\CleanFishv2.X\main.c
+866 text1 CODE >111:E:\Arquitectura\CleanFishv2.X\main.c
+86A text1 CODE >117:E:\Arquitectura\CleanFishv2.X\main.c
+870 text1 CODE >118:E:\Arquitectura\CleanFishv2.X\main.c
+882 text1 CODE >119:E:\Arquitectura\CleanFishv2.X\main.c
+888 text1 CODE >120:E:\Arquitectura\CleanFishv2.X\main.c
+89A text1 CODE >122:E:\Arquitectura\CleanFishv2.X\main.c
+8A8 text1 CODE >124:E:\Arquitectura\CleanFishv2.X\main.c
+8AE text1 CODE >130:E:\Arquitectura\CleanFishv2.X\main.c
+8B2 text1 CODE >131:E:\Arquitectura\CleanFishv2.X\main.c
+8B8 text1 CODE >132:E:\Arquitectura\CleanFishv2.X\main.c
+8BC text1 CODE >133:E:\Arquitectura\CleanFishv2.X\main.c
+8CE text1 CODE >135:E:\Arquitectura\CleanFishv2.X\main.c
+8D2 text1 CODE >136:E:\Arquitectura\CleanFishv2.X\main.c
+8D6 text1 CODE >138:E:\Arquitectura\CleanFishv2.X\main.c
+8DC text1 CODE >136:E:\Arquitectura\CleanFishv2.X\main.c
+8DC text1 CODE >139:E:\Arquitectura\CleanFishv2.X\main.c
+8F2 text1 CODE >143:E:\Arquitectura\CleanFishv2.X\main.c
+8F6 text1 CODE >144:E:\Arquitectura\CleanFishv2.X\main.c
+8FC text1 CODE >145:E:\Arquitectura\CleanFishv2.X\main.c
+900 text1 CODE >146:E:\Arquitectura\CleanFishv2.X\main.c
+912 text1 CODE >148:E:\Arquitectura\CleanFishv2.X\main.c
+916 text1 CODE >149:E:\Arquitectura\CleanFishv2.X\main.c
+91A text1 CODE >151:E:\Arquitectura\CleanFishv2.X\main.c
+920 text1 CODE >149:E:\Arquitectura\CleanFishv2.X\main.c
+920 text1 CODE >152:E:\Arquitectura\CleanFishv2.X\main.c
+936 text1 CODE >156:E:\Arquitectura\CleanFishv2.X\main.c
+93A text1 CODE >157:E:\Arquitectura\CleanFishv2.X\main.c
+940 text1 CODE >158:E:\Arquitectura\CleanFishv2.X\main.c
+944 text1 CODE >159:E:\Arquitectura\CleanFishv2.X\main.c
+956 text1 CODE >161:E:\Arquitectura\CleanFishv2.X\main.c
+95A text1 CODE >162:E:\Arquitectura\CleanFishv2.X\main.c
+95E text1 CODE >164:E:\Arquitectura\CleanFishv2.X\main.c
+964 text1 CODE >162:E:\Arquitectura\CleanFishv2.X\main.c
+964 text1 CODE >165:E:\Arquitectura\CleanFishv2.X\main.c
+97A text1 CODE >169:E:\Arquitectura\CleanFishv2.X\main.c
+97E text1 CODE >170:E:\Arquitectura\CleanFishv2.X\main.c
+984 text1 CODE >171:E:\Arquitectura\CleanFishv2.X\main.c
+988 text1 CODE >172:E:\Arquitectura\CleanFishv2.X\main.c
+99A text1 CODE >174:E:\Arquitectura\CleanFishv2.X\main.c
+99E text1 CODE >175:E:\Arquitectura\CleanFishv2.X\main.c
+9A2 text1 CODE >177:E:\Arquitectura\CleanFishv2.X\main.c
+9A8 text1 CODE >175:E:\Arquitectura\CleanFishv2.X\main.c
+9A8 text1 CODE >178:E:\Arquitectura\CleanFishv2.X\main.c
+9BA text1 CODE >189:E:\Arquitectura\CleanFishv2.X\main.c
+9CC text1 CODE >191:E:\Arquitectura\CleanFishv2.X\main.c
+9E2 text1 CODE >194:E:\Arquitectura\CleanFishv2.X\main.c
+9F4 text1 CODE >196:E:\Arquitectura\CleanFishv2.X\main.c
+A0A text1 CODE >199:E:\Arquitectura\CleanFishv2.X\main.c
+A1C text1 CODE >201:E:\Arquitectura\CleanFishv2.X\main.c
+A32 text1 CODE >206:E:\Arquitectura\CleanFishv2.X\main.c
+A44 text1 CODE >212:E:\Arquitectura\CleanFishv2.X\main.c
+AE6 text0 CODE >46:E:\Arquitectura\CleanFishv2.X\main.c
+AE6 text0 CODE >49:E:\Arquitectura\CleanFishv2.X\main.c
+AEA text0 CODE >51:E:\Arquitectura\CleanFishv2.X\main.c
+AEC text0 CODE >52:E:\Arquitectura\CleanFishv2.X\main.c
+AF0 text0 CODE >53:E:\Arquitectura\CleanFishv2.X\main.c
+B02 text0 CODE >54:E:\Arquitectura\CleanFishv2.X\main.c
+B08 text0 CODE >58:E:\Arquitectura\CleanFishv2.X\main.c
+B0E text0 CODE >59:E:\Arquitectura\CleanFishv2.X\main.c
+B14 text0 CODE >60:E:\Arquitectura\CleanFishv2.X\main.c
+B6E cinit CODE >948:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B6E cinit CODE >950:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B6E cinit CODE >953:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B6E cinit CODE >993:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B70 cinit CODE >994:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B72 cinit CODE >995:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B74 cinit CODE >996:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B76 cinit CODE >997:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B78 cinit CODE >998:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B7A cinit CODE >999:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B7E cinit CODE >1000:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B82 cinit CODE >1001:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B82 cinit CODE >1002:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B84 cinit CODE >1003:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B88 cinit CODE >1004:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B8A cinit CODE >1005:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B8C cinit CODE >1006:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B8E cinit CODE >1010:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B92 cinit CODE >1011:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B94 cinit CODE >1012:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B94 cinit CODE >1013:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B96 cinit CODE >1014:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B98 cinit CODE >1015:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B9A cinit CODE >1021:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B9A cinit CODE >1024:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B9C cinit CODE >1025:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+B9E cinit CODE >1026:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+BA0 cinit CODE >1027:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+BA2 cinit CODE >1028:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+BA4 cinit CODE >1029:C:\Users\PC\AppData\Local\Temp\xcAsbnc.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\CleanFishv2.X.production.o
+__Hspace_0 C27 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+__Hspace_1 29 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+__Hspace_4 60000E 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\CleanFishv2.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\PC\AppData\Local\Temp\xcAsbnc.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\CleanFishv2.X.production.o
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\CleanFishv2.X.production.o
+_LATB F8A 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+_LATD F8C 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+_RBPU 7F8F 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\PC\AppData\Local\Temp\xcAsbnc.o
+_main AE6 0 CODE 0 text0 dist/default/production\CleanFishv2.X.production.o
+start 0 0 CODE 0 init C:\Users\PC\AppData\Local\Temp\xcAsbnc.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\CleanFishv2.X.production.o
+LCD_Char@dat 17 0 COMRAM 1 cstackCOMRAM dist/default/production\CleanFishv2.X.production.o
+_LCD_Char A46 0 CODE 0 text4 dist/default/production\CleanFishv2.X.production.o
+_LCD_Init BDE 0 CODE 0 text5 dist/default/production\CleanFishv2.X.production.o
+__Hpowerup 0 0 CODE 0 powerup dist/default/production\CleanFishv2.X.production.o
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\CleanFishv2.X.production.o
+__accesstop 60 0 ABS 0 - C:\Users\PC\AppData\Local\Temp\xcAsbnc.o
+__end_of_LCD_Char A96 0 CODE 0 text4 dist/default/production\CleanFishv2.X.production.o
+__end_of_LCD_Init C12 0 CODE 0 text5 dist/default/production\CleanFishv2.X.production.o
+intlevel0 0 0 CODE 0 text C:\Users\PC\AppData\Local\Temp\xcAsbnc.o
+intlevel1 0 0 CODE 0 text C:\Users\PC\AppData\Local\Temp\xcAsbnc.o
+intlevel2 0 0 CODE 0 text C:\Users\PC\AppData\Local\Temp\xcAsbnc.o
+intlevel3 0 0 CODE 0 text C:\Users\PC\AppData\Local\Temp\xcAsbnc.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\CleanFishv2.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\CleanFishv2.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\CleanFishv2.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\CleanFishv2.X.production.o
+__pidataCOMRAM C12 0 CODE 0 idataCOMRAM dist/default/production\CleanFishv2.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\PC\AppData\Local\Temp\xcAsbnc.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\PC\AppData\Local\Temp\xcAsbnc.o
+_LCD_String BA8 0 CODE 0 text3 dist/default/production\CleanFishv2.X.production.o
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\CleanFishv2.X.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\CleanFishv2.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\CleanFishv2.X.production.o
+main@key 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\CleanFishv2.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\CleanFishv2.X.production.o
+__Hintcodelo 0 0 CODE 0 intcodelo dist/default/production\CleanFishv2.X.production.o
+_keyfind 820 0 CODE 0 text1 dist/default/production\CleanFishv2.X.production.o
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\CleanFishv2.X.production.o
+__Lintcodelo 0 0 CODE 0 intcodelo dist/default/production\CleanFishv2.X.production.o
+start_initialization B6E 0 CODE 0 cinit dist/default/production\CleanFishv2.X.production.o
+_OSCCON FD3 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\CleanFishv2.X.production.o
+__end_of_LCD_String BDE 0 CODE 0 text3 dist/default/production\CleanFishv2.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+__end_of_LCD_Command AE6 0 CODE 0 text6 dist/default/production\CleanFishv2.X.production.o
+LCD_String_xy@msg 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\CleanFishv2.X.production.o
+LCD_String_xy@pos 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\CleanFishv2.X.production.o
+LCD_String_xy@row 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\CleanFishv2.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\PC\AppData\Local\Temp\xcAsbnc.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\CleanFishv2.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\CleanFishv2.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\CleanFishv2.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\CleanFishv2.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\CleanFishv2.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\CleanFishv2.X.production.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\CleanFishv2.X.production.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\CleanFishv2.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\CleanFishv2.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\CleanFishv2.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\CleanFishv2.X.production.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/production\CleanFishv2.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\CleanFishv2.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\CleanFishv2.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\CleanFishv2.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\CleanFishv2.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\CleanFishv2.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\CleanFishv2.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\CleanFishv2.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\CleanFishv2.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\CleanFishv2.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\CleanFishv2.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\CleanFishv2.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\CleanFishv2.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\CleanFishv2.X.production.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\CleanFishv2.X.production.o
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\PC\AppData\Local\Temp\xcAsbnc.o
+_LCD_String_xy B2E 0 CODE 0 text2 dist/default/production\CleanFishv2.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\CleanFishv2.X.production.o
+__Hconfig 30000E 0 CONFIG 4 config dist/default/production\CleanFishv2.X.production.o
+__end_ofKeypad_Key_Press@F3225 812 0 SMALLCONST 0 smallconst dist/default/production\CleanFishv2.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\CleanFishv2.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\CleanFishv2.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\CleanFishv2.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\CleanFishv2.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\CleanFishv2.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\CleanFishv2.X.production.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\CleanFishv2.X.production.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\CleanFishv2.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\CleanFishv2.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\CleanFishv2.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\CleanFishv2.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\CleanFishv2.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\CleanFishv2.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\CleanFishv2.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\CleanFishv2.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\CleanFishv2.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\CleanFishv2.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\CleanFishv2.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\CleanFishv2.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\CleanFishv2.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\CleanFishv2.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\CleanFishv2.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\CleanFishv2.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\CleanFishv2.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\CleanFishv2.X.production.o
+_PORTDbits F83 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\CleanFishv2.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\CleanFishv2.X.production.o
+__Hheap 0 0 HEAP 7 heap dist/default/production\CleanFishv2.X.production.o
+__Hinit 4 0 CODE 0 init dist/default/production\CleanFishv2.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\CleanFishv2.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\CleanFishv2.X.production.o
+__Htemp 0 0 COMRAM 1 temp dist/default/production\CleanFishv2.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\CleanFishv2.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\CleanFishv2.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\CleanFishv2.X.production.o
+__Lheap 0 0 HEAP 7 heap dist/default/production\CleanFishv2.X.production.o
+__Linit 0 0 CODE 0 init dist/default/production\CleanFishv2.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\CleanFishv2.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\CleanFishv2.X.production.o
+__Ltemp 0 0 COMRAM 1 temp dist/default/production\CleanFishv2.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\CleanFishv2.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\CleanFishv2.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\CleanFishv2.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\CleanFishv2.X.production.o
+__S0 C27 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+__S1 29 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+_idx 25 0 COMRAM 1 bssCOMRAM dist/default/production\CleanFishv2.X.production.o
+Keypad_Key_Press@F3225 801 0 SMALLCONST 0 smallconst dist/default/production\CleanFishv2.X.production.o
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\CleanFishv2.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\CleanFishv2.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\CleanFishv2.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\CleanFishv2.X.production.o
+__Hramtop 800 0 RAM 0 ramtop dist/default/production\CleanFishv2.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\CleanFishv2.X.production.o
+__activetblptr 1 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\CleanFishv2.X.production.o
+_keypad 1 0 COMRAM 1 dataCOMRAM dist/default/production\CleanFishv2.X.production.o
+_temp_col 26 0 COMRAM 1 bssCOMRAM dist/default/production\CleanFishv2.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\CleanFishv2.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\CleanFishv2.X.production.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\CleanFishv2.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\CleanFishv2.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\CleanFishv2.X.production.o
+LCD_String_xy@location 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\CleanFishv2.X.production.o
+_rowloc 27 0 COMRAM 1 bssCOMRAM dist/default/production\CleanFishv2.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\CleanFishv2.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\CleanFishv2.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\PC\AppData\Local\Temp\xcAsbnc.o
+stackhi 0 0 ABS 0 - C:\Users\PC\AppData\Local\Temp\xcAsbnc.o
+stacklo 0 0 ABS 0 - C:\Users\PC\AppData\Local\Temp\xcAsbnc.o
+__Lintcode 0 0 CODE 0 intcode dist/default/production\CleanFishv2.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\CleanFishv2.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\CleanFishv2.X.production.o
+__end_of_LCD_String_xy B6E 0 CODE 0 text2 dist/default/production\CleanFishv2.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+__pbssCOMRAM 20 0 COMRAM 1 bssCOMRAM dist/default/production\CleanFishv2.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\CleanFishv2.X.production.o
+end_of_initialization B9A 0 CODE 0 cinit dist/default/production\CleanFishv2.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\CleanFishv2.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\CleanFishv2.X.production.o
+__Hreset_vec 0 0 CODE 0 reset_vec dist/default/production\CleanFishv2.X.production.o
+__Lramtop 800 0 RAM 0 ramtop dist/default/production\CleanFishv2.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\CleanFishv2.X.production.o
+__pcinit B6E 0 CODE 0 cinit dist/default/production\CleanFishv2.X.production.o
+__ptext0 AE6 0 CODE 0 text0 dist/default/production\CleanFishv2.X.production.o
+__ptext1 820 0 CODE 0 text1 dist/default/production\CleanFishv2.X.production.o
+__ptext2 B2E 0 CODE 0 text2 dist/default/production\CleanFishv2.X.production.o
+__ptext3 BA8 0 CODE 0 text3 dist/default/production\CleanFishv2.X.production.o
+__ptext4 A46 0 CODE 0 text4 dist/default/production\CleanFishv2.X.production.o
+__ptext5 BDE 0 CODE 0 text5 dist/default/production\CleanFishv2.X.production.o
+__ptext6 A96 0 CODE 0 text6 dist/default/production\CleanFishv2.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\CleanFishv2.X.production.o
+_password 11 0 COMRAM 1 dataCOMRAM dist/default/production\CleanFishv2.X.production.o
+__ramtop 800 0 RAM 0 ramtop C:\Users\PC\AppData\Local\Temp\xcAsbnc.o
+__Lpowerup 0 0 CODE 0 powerup dist/default/production\CleanFishv2.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\CleanFishv2.X.production.o
+LCD_String@msg 18 0 COMRAM 1 cstackCOMRAM dist/default/production\CleanFishv2.X.production.o
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\CleanFishv2.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\CleanFishv2.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\PC\AppData\Local\Temp\xcAsbnc.o
+___heap_lo 0 0 ABS 0 - C:\Users\PC\AppData\Local\Temp\xcAsbnc.o
+___param_bank 0 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\CleanFishv2.X.production.o
+__end_of__initialization B9A 0 CODE 0 cinit dist/default/production\CleanFishv2.X.production.o
+_pass_user 20 0 COMRAM 1 bssCOMRAM dist/default/production\CleanFishv2.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\CleanFishv2.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\CleanFishv2.X.production.o
+LCD_Command@cmd 17 0 COMRAM 1 cstackCOMRAM dist/default/production\CleanFishv2.X.production.o
+__pcstackCOMRAM 16 0 COMRAM 1 cstackCOMRAM dist/default/production\CleanFishv2.X.production.o
+__end_of_main B2E 0 CODE 0 text0 dist/default/production\CleanFishv2.X.production.o
+_LATD0 7C60 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+_LATD1 7C61 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+_PORTB F81 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+_PORTD F83 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+_TRISB F93 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+_TRISD F95 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+__end_of_keyfind A46 0 CODE 0 text1 dist/default/production\CleanFishv2.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\CleanFishv2.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\CleanFishv2.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\CleanFishv2.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\CleanFishv2.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\CleanFishv2.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\CleanFishv2.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\CleanFishv2.X.production.o
+__initialization B6E 0 CODE 0 cinit dist/default/production\CleanFishv2.X.production.o
+__pdataCOMRAM 1 0 COMRAM 1 dataCOMRAM dist/default/production\CleanFishv2.X.production.o
+_LCD_Command A96 0 CODE 0 text6 dist/default/production\CleanFishv2.X.production.o
+_col_loc 28 0 COMRAM 1 bssCOMRAM dist/default/production\CleanFishv2.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\CleanFishv2.X.production.o
+__Hsmallconst 820 0 SMALLCONST 0 smallconst dist/default/production\CleanFishv2.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\CleanFishv2.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\CleanFishv2.X.production.o
+__Hintcode 0 0 CODE 0 intcode dist/default/production\CleanFishv2.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text1 0 820 820 407 1
+reset_vec 0 0 0 4 1
+smallconst 0 800 800 20 1
+dataCOMRAM 1 1 1 28 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
